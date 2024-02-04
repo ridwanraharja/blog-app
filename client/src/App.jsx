@@ -10,6 +10,7 @@ import { About } from "./pages/About";
 import { Projects } from "./pages/Projects";
 import { Dashboard } from "./pages/Dashboard";
 import { Header } from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,6 +26,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
